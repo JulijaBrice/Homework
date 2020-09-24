@@ -1,0 +1,87 @@
+ul{
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  text-align: center;
+  text-shadow: 2px 2px grey;
+}
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #d9a0a099;
+}
+
+nav div {
+  margin: 25px ;
+  font-weight: bold;
+  font-size: x-large;
+  border-spacing: 50px;
+}
+
+#mainLayout{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* margin: 40px; */
+}
+
+.topSector{
+  flex: 0 0 100%;
+  background-color: rgb(190, 119, 190);
+}
+
+.rightSector {
+  flex: 60%;
+  background-color: rgb(185, 86, 86);
+}
+
+.commonText{
+   padding: 20px;
+}
+
+.leftSector{
+  flex: 0 0 30%;
+  background-color: rgb(145, 207, 145);
+  font-style: italic;
+  font-weight: bolder;
+}
+.login{
+  background-color: rgb(165, 113, 202);
+}
+.contact{
+  background-color: rgb(184, 179, 206);
+}
+@media only screen and (min-width: 700px) {
+  #mainLayout{
+    flex-direction: row;
+  }
+}
+.workinghours{
+  width: 100%;
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:5px 5px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
