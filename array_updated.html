@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julija Array HTML</title>
+</head>
+<body>
+  <!-- Masīva attelošana iekš html.
+  masīvs:
+  var majasdObj = [
+    {name: 'Ann', notes: [3, 5, 8]},
+    {name: 'Jeanny', notes: [4, 6, 9]},
+    {name: 'John', notes: [2, 7, 9]},
+    {name: 'Max', notes: [1, 5, 9]},
+  ]
+  jāizveido html struktūra atbilstoši paraugam. -->
+  <div id="content"></div>
+<script>
+    var dom = [
+    {name: 'Ann', notes: ["lol","very funny", "super","amazing"]},
+    {name: 'Jeanny', notes: ["this is bad", "try again", "git gud"]},
+    {name: 'John', notes: ["i", "am", "smart","guy"]},
+    {name: 'Max', notes: ["apple", "pear", "orange"]},
+  ] 
+
+    var out = "JulijaMDarray";
+    for(var i = 0; i < dom.length; i++) {
+      out += "<h3>"+ dom[i].name+"</h3>"      
+      for(var k = 0; k < dom[i].notes.length; k++){
+        out += "<div>" + dom[i].notes[k]+'</div>'
+      }
+    }
+  // out += "<h3>"+dom[0].name+"</h3>"
+  // out += "<div>" +dom[0].notes[0]+'</div>'
+  // out += "<div>" +dom[0].notes[1]+'</div>'
+  // out += "<div>" +dom[0].notes[2]+'</div>'
+  // out += "<h3>"+dom[1].name+"</h3>"
+  // out += "<div>" +dom[1].notes[0]+'</div>'
+  // out += "<div>" +dom[1].notes[1]+'</div>'
+  // out += "<div>" +dom[1].notes[2]+'</div>'
+  // out += "<h3>"+dom[2].name+"</h3>"
+  // out += "<div>" +dom[2].notes[0]+'</div>'
+  // out += "<div>" +dom[2].notes[1]+'</div>'
+  // out += "<div>" +dom[2].notes[2]+'</div>'
+  // out += "<h3>"+dom[3].name+"</h3>"
+  // out += "<div>" +dom[3].notes[0]+'</div>'
+  // out += "<div>" +dom[3].notes[1]+'</div>'
+  // out += "<div>" +dom[3].notes[2]+'</div>'
+
+  var mycontent = document.getElementById("content")
+  mycontent.innerHTML = out
+</script>
+</body>
+</html>
+ 
