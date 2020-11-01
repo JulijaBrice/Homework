@@ -1,0 +1,159 @@
+#slideout {
+  position: fixed;
+  left: 0;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+#slideout_inner {
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  left: -250px;
+  background-color: #f2f2f2;
+  -webkit-transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+#Feedback_btn {
+  position: relative;
+  top: 70px;
+  left: 226px;
+  background-color: #f2f2f2;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.slideout_visible{
+  left: 0 !important;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin:0
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.main_button{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main_button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.error-msg{
+  height: 12px;
+  font-size: 10px;
+  color: #AA0000;
+}
+
+/* The Modal box (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+table.users-table {
+  width: 100%;
+  background-color: #ede8df;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #2a2525;
+  border-style: ridge;
+  color: #29272a;
+}
+
+table.users-table td, table.users-table th {
+  border-width: 1px;
+  border-color: #2a2525;
+  border-style: ridge;
+  padding: 5px;
+}
+
+table.users-table thead {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.item1{ grid-area: menu; }
+.item2 { grid-area: main;
+  text-align: center; 
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu menu main main main main';
+  grid-gap: 10px;
+  padding: 50px;
+}
+
+
