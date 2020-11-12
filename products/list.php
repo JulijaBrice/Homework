@@ -1,15 +1,11 @@
 <?php
-      $dbhost = "localhost:3306";
-      $dbuser = "root";
-      $dbpass = "";
-      $dbname = "shop";
-      $dbConnection = new mysqli ($dbhost, $dbuser, $dbpass, $dbname);
+      require_once __DIR__. "/DB_wrapper.php";
 
       $sql = "SELECT * FROM products";
-      $products = $dbConnection ->query($sql)->fetch_all(MYSQLI_ASSOC);
-      $a;
+      $products = DB::run($sql) ->fetch_all(MYSQLI_ASSOC);
+      $a = "a";
  ?>
-
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,13 +47,5 @@
 </html>
 
 <script>
-  $.ajax({
-    url: "/products/api.php?table=cars"
-  }).done(function(response){
-    response = JSON.parse (response);
-    if (response.error){
-      alert(response.error) 
-    }
-  })
-  
+ 
 </script>

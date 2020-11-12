@@ -1,13 +1,10 @@
 <?php
-      $dbhost = "localhost:3306";
-      $dbuser = "root";
-      $dbpass = "";
-      $dbname = "shop";
-      $dbConnection = new mysqli ($dbhost, $dbuser, $dbpass, $dbname);
+      require_once __DIR__. "/DB_wrapper.php";
 
       $id = $_GET["id"];
       $sql = "DELETE FROM products WHERE id=$id";
-      $dbConnection ->query($sql);
+      
+      DB::run($sql);
 
       Header('Location: /products/list.php');
  ?>
