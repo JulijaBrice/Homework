@@ -14,7 +14,7 @@
       $response = [];
 
       $sqlResponse = DB::run($sql);
-
+ 
       if($sqlResponse){
         $response = $sqlResponse->fetch_all(MYSQLI_ASSOC);
       }else {
