@@ -35,6 +35,7 @@
               <?php } ?>
             </tbody>
           </table>
+          <a href="/mvc/?page=list&action=modify">Add product</a>
         <?php
 
        }

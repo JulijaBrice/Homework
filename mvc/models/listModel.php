@@ -29,5 +29,9 @@
       $sql = "UPDATE products SET name = '$name', price = $price WHERE id = $id";
       DB::run($sql);
     }
+    public function insertNew($name, $price){
+      $sql = "INSERT INTO products (name, price) VALUES ('$name', $price)";
+      DB::run($sql);
+    }
   }
 ?>

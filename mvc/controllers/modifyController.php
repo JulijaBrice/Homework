@@ -4,13 +4,16 @@
   if (!empty($_POST["id"])){
     //Update
     $model->updateById(
+      $_POST["id"], 
       $_POST["name"], 
-      $_POST["price"], 
-      $_POST["id"],
+      $_POST["price"],
     );
   }else{
     // Insert
+    $model->insertNew(
+      $_POST["name"], 
+      $_POST["price"],
+    );
   }
-
   Header("Location: /mvc/?page=list");
 ?>
