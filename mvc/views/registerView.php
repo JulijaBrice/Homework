@@ -7,5 +7,5 @@
         $form ->setBtnText('Save user');
         $form ->html();
       }
-    }
+    } 
 ?>
