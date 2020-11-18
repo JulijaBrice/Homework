@@ -16,6 +16,9 @@ if (!empty($_POST["email"])) {
       );
 
       if ($IsValidPassword) {
+        session_start();
+        $_SESSION["id"] = $response["email"];
+        Header("Location: /mvc/?page=list");
         echo "You have logged in";
       } else {
         echo "Invalid password";

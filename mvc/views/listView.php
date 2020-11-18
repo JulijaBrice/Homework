@@ -36,6 +36,11 @@
             </tbody>
           </table>
           <a href="/mvc/?page=list&action=modify">Add product</a>
+          
+          <form method="POST">
+            <input type="hidden" name="Logout">
+            <button type="submit">Logout</button>
+          </form>
         <?php
 
        }
