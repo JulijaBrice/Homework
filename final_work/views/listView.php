@@ -18,39 +18,24 @@
             My Tasks
           </h2>
           <a href="/final_work/?page=list&action=modify">Add task</a>
-
-          <table>
-            <thead>
-              <tr>
-                  <td>#</td>
-                  <td>Description</td>
-                  <td></td>
-                  <td></td>
-              </tr>
-            </thead>
-            <tbody>
+          <div>
+            <ul class="todo-list">
               <!--Show only not done -->
               <?php foreach($this->taskList as $task) {
                 if($task["state"] != 0){
                   continue;
                 }
                 ?>
-                <tr>
-                  <td>
-                      <input task_id="<?=$task["id"]?>" type="checkbox" <?= $task["state"]!="0" ? "checked" : "" ?>>
-                      <?php
-                        $form = new modifyForm($task["description"], $task["state"], $task["id"]);
-                        $form->html_hidden();
-                      ?>
-                  </td>
-                  <td  class="<?= $task["state"]!="0" ? "strike" : "" ?>" ><?= $task["description"]?></td>
-                  <td>
-                    <a href="/final_work/?page=list&action=modify&task_id=<?= $task['id']?>">Edit</a>
-                  </td>
-                  <td>
-                    <a href="/final_work/?page=delete&task_id=<?= $task['id']?>">Delete</a>
-                  </td>
-                 </tr>
+                <div class="todo" >
+                  <input class="checkbox" task_id="<?=$task["id"]?>" type="checkbox" <?= $task["state"]!="0" ? "checked" : "" ?>>
+                  <?php
+                    $form = new modifyForm($task["description"], $task["state"], $task["id"]);
+                    $form->html_hidden();
+                  ?>
+                  <li class="todo-item <?= $task["state"]!="0" ? "strike" : "" ?>" ><?= $task["description"]?></li>
+                  <a class="check-btn" href="/final_work/?page=list&action=modify&task_id=<?= $task['id']?>">Edit</a>
+                  <a class="trash-btn" href="/final_work/?page=delete&task_id=<?= $task['id']?>">Delete</a>
+                </div>
               <?php } ?>
               <!-- Show only Done -->
               <?php foreach($this->taskList as $task) { 
@@ -58,23 +43,18 @@
                   continue;
                 }
                 ?>
-                <tr>
-                  <td>
-                      <input task_id="<?=$task["id"]?>" type="checkbox" <?= $task["state"]!="0" ? "checked" : "" ?>>
-                      <?php
-                        $form = new modifyForm($task["description"], $task["state"], $task["id"]);
-                        $form->html_hidden();
-                      ?>
-                  </td>
-                  <td  class="strike" ><?= $task["description"]?></td>
-                  <td></td>
-                  <td>
-                    <a href="/final_work/?page=delete&task_id=<?= $task['id']?>">Delete</a>
-                  </td>
-                 </tr>
+                <div class="todo completed">
+                <input class="checkbox" task_id="<?=$task["id"]?>" type="checkbox" <?= $task["state"]!="0" ? "checked" : "" ?>>
+                <?php
+                  $form = new modifyForm($task["description"], $task["state"], $task["id"]);
+                  $form->html_hidden();
+                  ?>
+                 <li class="strike" ><?= $task["description"]?></li>
+                 <a class="trash-btn" href="/final_work/?page=delete&task_id=<?= $task['id']?>">Delete</a>
+                </div>
               <?php } ?>
-            </tbody>
-          </table>
+            </ul>
+          </div>
           <script src="js/listView.js"></script>
         <?php
        }
