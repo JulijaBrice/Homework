@@ -1,15 +1,6 @@
 <?php
   class UserForm {
     private $btnText;
-
-    public function html_loginHeader(){
-      ?> 
-       <h1>
-        Please Login
-      </h1>
-    <?php
-    }
-
     public function html(){
       ?> 
 
@@ -23,7 +14,6 @@
         <input type="password" name="password">
       </label>
       <button type="submit"><?= $this -> getBtnText() ?></button>
-      <a href="./?page=register">Register</a>
     </form>
 
     <?php

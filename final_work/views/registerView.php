@@ -5,7 +5,15 @@
       public function html(){
         $form = new UserForm();
         $form ->setBtnText('Register');
+        ?>
+          <h1>
+            Please Register
+          </h1>
+        <?php
         $form ->html();
+        ?>
+          <a href="./?page=login">Login</a>
+        <?php
       }
     } 
 ?>

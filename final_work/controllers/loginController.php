@@ -30,12 +30,19 @@ if (!empty($_POST["loginname"])) {
       echo "Password is not set";
     }
   } else {
-    echo "User with login name: '$loginname' does not exist";
+    echo "User with login name: '$loginname' does not exist, please register";
   }
 }
 else{
   // user loads the page
-  $form->html_loginHeader();
+  ?>
+  <h1>
+    Please Login
+  </h1>
+  <?php
 }
 $form->setBtnText('Login');
 $form->html();
+?>
+<a href="./?page=register">Register</a>
+
