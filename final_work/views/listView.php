@@ -10,9 +10,9 @@
 
        public function html(){
         ?>
-          <form method="POST">
+          <form class="logout_form" method="POST">
             <input type="hidden" name="Logout">
-            <button type="submit">Logout</button>
+            <button class="logout_button" type="submit">Logout</button>
           </form>
           <h2>
             My Tasks
@@ -28,6 +28,7 @@
                 ?>
                 <div class="todo" >
                   <input class="checkbox" task_id="<?=$task["id"]?>" type="checkbox" <?= $task["state"]!="0" ? "checked" : "" ?>>
+                  <i class="fas fa-check" aria-hidden="true"></i>
                   <?php
                     $form = new modifyForm($task["description"], $task["state"], $task["id"]);
                     $form->html_hidden();

@@ -4,10 +4,18 @@
 
 /* <!--do not delete ABOVE--> */
 
+.logout_button {
+  float: right;
+  margin-left: 93%;
+  margin-top: -17vh;
+}
+.logout_form{
+  /* height: 30px; */
+}
 .checkbox{
   width: 55px;
   height: 54px;
-  left: -1px;
+  left: -73px;
   position: relative;
 }
 
@@ -87,11 +95,11 @@ form a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.5rem;
   background: white;
   font-size: 1.5rem;
   transition: all 0.5s ease;
   height: 54px;
+  margin: 20px 20px 20px 91px;
 }
 
 form input,
