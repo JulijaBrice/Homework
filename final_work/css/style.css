@@ -1,13 +1,16 @@
 .strike {
   text-decoration: line-through;
+  margin-left: -42px;
 }
 
 /* <!--do not delete ABOVE--> */
 
-.logout_button {
+.logout_button{
   float: right;
   margin-left: 93%;
   margin-top: -12vh;
+  background-color: rgba(68, 100, 173, 1) !important;
+
 }
 .logout_form{
   min-height: 19vh;
@@ -16,10 +19,18 @@
   width: 100%;
   text-align: center;
   text-shadow: 2px 2px 15px rgb(176, 230, 255);
+  font-size: 45px;
+}
+.add_task a{
+  color: rgb(85 255 96);
 }
 .add_task{
   padding-top: 20px;
   text-align: center;
+  font-size: 30px;
+  text-decoration: underline;
+  color:rgba(68, 100, 173, 1);
+  text-shadow: 2px 2px 15px rgb(26 215 79);
 }
 .checkbox{
   width: 55px;
@@ -34,6 +45,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 *:focus,
@@ -72,7 +84,7 @@ form a {
   padding: 0.5rem 0.5rem 0.5rem 1rem;
   font-size: 1.8rem;
   border: none;
-
+  height: 54px;
   background: #f4f4f4;
 }
 
@@ -121,32 +133,41 @@ form input,
 }
 
 .trash-btn,
-.check-btn {
+.edit_button,
+.logout_button,
+.submit_button,
+.register_button,
+.login_button{
   background-color: rgba(74, 21, 110, 1);
   color: white;
   border: none;
   padding: 1rem;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 16px;
   transition: 0.2s all ease;
+  height: 54px;
+  text-decoration: none;
 }
-
-.check-btn {
+.register_button{
+  text-align: center;
+}
+.edit_button {
   background-color: rgba(68, 100, 173, 1);
 }
 
-.check-btn:hover {
+.edit_button:hover {
   background-color: rgba(68, 100, 173, 1);
   color: white;
 }
 
 .trash-btn:hover {
   color: white;
-  background-color: rgba(74, 21, 110, 1);
+  background-color: rgb(255, 0, 0);
 }
 
 .todo-item {
   padding: 0rem 1.2rem;
+  margin-left: -60px;
 }
 
 .fa-trash,
@@ -156,7 +177,7 @@ form input,
 
 .completed {
   opacity: 0.6;
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .fall {
@@ -203,4 +224,7 @@ select {
 .select:hover::after {
   background-color: white;
   color: rgba(74, 21, 110, 1);
+}
+.description_field{
+  height:54px;
 }

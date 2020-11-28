@@ -38,7 +38,7 @@
                     $form->html_hidden();
                   ?>
                   <li class="todo-item <?= $task["state"]!="0" ? "strike" : "" ?>" ><?= $task["description"]?></li>
-                  <a class="check-btn" href="/final_work/?page=list&action=modify&task_id=<?= $task['id']?>">Edit</a>
+                  <a class="edit_button" href="/final_work/?page=list&action=modify&task_id=<?= $task['id']?>">Edit</a>
                   <a class="trash-btn" href="/final_work/?page=delete&task_id=<?= $task['id']?>">Delete</a>
                 </div>
               <?php } ?>

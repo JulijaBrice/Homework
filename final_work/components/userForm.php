@@ -13,7 +13,7 @@
         Password 
         <input type="password" name="password">
       </label>
-      <button type="submit"><?= $this -> getBtnText() ?></button>
+      <button class="submit_button" type="submit"><?= $this -> getBtnText() ?></button>
     </form>
 
     <?php

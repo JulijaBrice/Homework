@@ -12,7 +12,8 @@
         <?php
         $form ->html();
         ?>
-          <a href="./?page=login">Login</a>
+          <!-- <a href="./?page=login">Login</a> -->
+          <a class="login_button" href="./?page=login">Login</a>
         <?php
       }
     } 

@@ -44,5 +44,6 @@ else{
 $form->setBtnText('Login');
 $form->html();
 ?>
-<a href="./?page=register">Register</a>
+<!-- <button class="register_button" href="./?page=register">Register</button> -->
+<a class="register_button" href="./?page=register">Register</a>
 

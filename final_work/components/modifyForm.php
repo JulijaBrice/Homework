@@ -14,10 +14,10 @@
       public function html(){
         ?>
           <form action="/final_work/?page=modify" method="POST">
-            <input name="description" value="<?= $this->description ?>">
+            <input class="description_field" name="description" value="<?= $this->description ?>">
             <input type="hidden" name="state" value="<?= $this->state ?>">
             <input type="hidden" name="id"value="<?= $this->id ?>">
-            <button type="submit">Save</button>
+            <button class="submit_button" type="submit">Save</button>
           </form>
         <?php
       }
