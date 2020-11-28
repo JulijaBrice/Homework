@@ -4,18 +4,17 @@
     public function html(){
       ?> 
 
-    <form method="POST">
-      <label>
+    <form class="login_form" method="POST">
+      <label class="login_lable">
         Login Name
-        <input name="loginname">
       </label>
-      <label>
+      <input name="loginname">
+      <label class="login_lable">
         Password 
-        <input type="password" name="password">
       </label>
+      <input type="password" name="password">
       <button class="submit_button" type="submit"><?= $this -> getBtnText() ?></button>
     </form>
-
     <?php
     }
 

@@ -12,7 +12,7 @@
       Header("Location: /final_work/?page=login");
     }else{
       if (!empty($_POST)){
-        echo "Some fields are missing";
+        echo "<div class='info_text'>Some fields are missing</div>";
       }
     }
 

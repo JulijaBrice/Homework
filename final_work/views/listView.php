@@ -15,9 +15,9 @@
             <button class="logout_button" type="submit">Logout</button>
           </form>
           <h2 class="main_header">
-            My Tasks <?=
-            $_SESSION["loginname"]
-            ?>
+            Tasks that <?=
+            $_SESSION["loginname"] 
+            ?> has to do
           </h2>
           <h3 class="add_task">
           <a href="/final_work/?page=list&action=modify">Add task</a>
@@ -37,7 +37,7 @@
                     $form = new modifyForm($task["description"], $task["state"], $task["id"]);
                     $form->html_hidden();
                   ?>
-                  <li class="todo-item <?= $task["state"]!="0" ? "strike" : "" ?>" ><?= $task["description"]?></li>
+                  <li class="todo-item <?= $task["state"]!="0" ? "strike" : "" ?>" >        <input type="text" value="<?= $task["description"]?>" class="input_long"></li>
                   <a class="edit_button" href="/final_work/?page=list&action=modify&task_id=<?= $task['id']?>">Edit</a>
                   <a class="trash-btn" href="/final_work/?page=delete&task_id=<?= $task['id']?>">Delete</a>
                 </div>
@@ -54,7 +54,7 @@
                   $form = new modifyForm($task["description"], $task["state"], $task["id"]);
                   $form->html_hidden();
                   ?>
-                 <li class="strike" ><?= $task["description"]?></li>
+                 <li class="strike" ><input type="text" value="<?= $task["description"]?>" class="input_long"></li>
                  <a class="trash-btn" href="/final_work/?page=delete&task_id=<?= $task['id']?>">Delete</a>
                 </div>
               <?php } ?>

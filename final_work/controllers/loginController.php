@@ -24,13 +24,13 @@ if (!empty($_POST["loginname"])) {
         Header("Location: /final_work/?page=list");
         echo "You have logged in";
       } else {
-        echo "Invalid password";
+        echo "<div class='info_text'>Invalid password</div>";
       }
     } else {
-      echo "Password is not set";
+      echo "<div class='info_text'>Password is not set</div>";
     }
   } else {
-    echo "User with login name: '$loginname' does not exist, please register";
+    echo "<div class='info_text'>User with login name: '$loginname' does not exist, please register</div>";
   }
 }
 else{
@@ -44,6 +44,5 @@ else{
 $form->setBtnText('Login');
 $form->html();
 ?>
-<!-- <button class="register_button" href="./?page=register">Register</button> -->
 <a class="register_button" href="./?page=register">Register</a>
 

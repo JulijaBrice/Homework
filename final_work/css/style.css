@@ -10,10 +10,18 @@
   margin-left: 93%;
   margin-top: -12vh;
   background-color: rgba(68, 100, 173, 1) !important;
-
+  margin: 17px;
 }
 .logout_form{
-  min-height: 19vh;
+  min-height: 9vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+.info_text{
+  width: 100%;
+  color: red;
+  text-align: center;
 }
 .main_header{
   width: 100%;
@@ -42,7 +50,7 @@
 * {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
@@ -70,6 +78,12 @@ header {
   text-shadow: 2px 2px 15px rgb(176, 230, 255);
   font-size: 1.2rem;
 }
+.login_form{
+  display: grid;
+}
+.login_lable{
+  min-width: 20px;
+}
 
 header,
 form {
@@ -77,6 +91,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 25px;
 }
 
 form input,
@@ -168,7 +183,14 @@ form input,
 .todo-item {
   padding: 0rem 1.2rem;
   margin-left: -60px;
+  max-width: 150ch;
 }
+.input_long {
+  width: 100%;
+  height: 100%;
+  font-size: 23px;
+  border: 0px;
+  color: rgb(88, 87, 87);}
 
 .fa-trash,
 .fa-check {
@@ -227,4 +249,5 @@ select {
 }
 .description_field{
   height:54px;
+  color: rgb(88, 87, 87);
 }
