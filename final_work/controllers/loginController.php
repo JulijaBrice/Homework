@@ -36,7 +36,7 @@ if (!empty($_POST["loginname"])) {
 else{
   // user loads the page
   ?>
-  <h1>
+  <h1 class="main_header">
     Please Login
   </h1>
   <?php

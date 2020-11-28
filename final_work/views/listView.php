@@ -14,10 +14,14 @@
             <input type="hidden" name="Logout">
             <button class="logout_button" type="submit">Logout</button>
           </form>
-          <h2>
-            My Tasks
+          <h2 class="main_header">
+            My Tasks <?=
+            $_SESSION["loginname"]
+            ?>
           </h2>
+          <h3 class="add_task">
           <a href="/final_work/?page=list&action=modify">Add task</a>
+          </h3>
           <div>
             <ul class="todo-list">
               <!--Show only not done -->

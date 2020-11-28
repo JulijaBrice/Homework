@@ -6,7 +6,7 @@
         $form = new UserForm();
         $form ->setBtnText('Register');
         ?>
-          <h1>
+          <h1 class="main_header">
             Please Register
           </h1>
         <?php
