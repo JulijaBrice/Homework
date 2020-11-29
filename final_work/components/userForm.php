@@ -17,7 +17,7 @@
     </form>
     <?php
     }
-
+    // this function changes login button text to register text //
     public function setBtnText($text){
       $this->btnText = $text;
     }

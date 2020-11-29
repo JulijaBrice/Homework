@@ -21,7 +21,7 @@
           </form>
         <?php
       }
-
+      // this form submits on checkbox change // 
       public function html_hidden(){
         ?>
           <form hidden id="modify_form_<?=$this->id?>" action="/final_work/?page=modify" method="POST">

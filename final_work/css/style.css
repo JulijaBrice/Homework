@@ -157,7 +157,7 @@ form input,
 .logout_button,
 .submit_button,
 .register_button,
-.login_button{
+.login_button {
   background-color: rgba(74, 21, 110, 1);
   color: white;
   border: none;
