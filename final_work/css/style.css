@@ -1,6 +1,5 @@
 .strike {
   text-decoration: line-through;
-  margin-left: -42px;
 }
 
 /* <!--do not delete ABOVE--> */
@@ -41,8 +40,14 @@
   text-shadow: 2px 2px 15px rgb(26 215 79);
 }
 .checkbox{
-  width: 55px;
-  height: 54px;
+  width: 66px;
+  height: 66px;
+  left: -73px;
+  position: relative;
+}
+.checkbox-done{
+  width: 62px;
+  height: 62px;
   left: -73px;
   position: relative;
 }
